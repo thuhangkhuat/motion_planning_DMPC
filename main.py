@@ -15,9 +15,10 @@ VMIN = 0.2
 VREF = 1.0
 OBS_RADIUS = 0.7
 obstacles = create_obstacles(SIM_TIME, NUMBER_OF_TIMESTEPS)
-starts = np.array([[1,1],[1,3],[1,5],[1,7],[1,9],[34,9],[34,7],[34,5],[34,3],[34,1]])
-goals = np.array([[34,9],[34,7],[34,5],[34,3],[34,1],[1,1],[1,3],[1,5],[1,7],[1,9]])
+starts = np.array([[1,1],[1,5],[1,9]])
+goals = np.array([[34,9],[34,5],[34,1]])
 num_robot = starts.shape[0]
+
 d = 2   # Distance between two consecutive robot
 alpha = 3*np.pi/4 # Angle
 
